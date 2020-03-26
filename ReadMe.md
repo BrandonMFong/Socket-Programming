@@ -1,0 +1,3 @@
+Introduction to Socket Programming
+
+We want you to write code to enable a machine Server.c to receive text messages from a machine Client.c over TCP sockets. Server.c should print these text messages on the standard output. Server.c should then reverse the string and send it back to Client.c. Server.c should be listening for text messages on a port known to Client.c. Client.c should take a text message from stdin – transmit the message, receive the reverse message, print the reversed message on standard output and then exit. 
