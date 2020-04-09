@@ -11,8 +11,7 @@ const int MESSAGELENGTH = 100;
 
 int main() 
 {
-   char message[MESSAGELENGTH]; // how parameterize size of char array
-
+   printf("Hello World!");
 
    return 0;
 }

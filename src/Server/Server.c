@@ -2,10 +2,11 @@
 // Jason
 
 #include <stdio.h>
+#include "Server.h"
+
 int main() 
 {
 
-    int SocketA = socket(); // Create Socket Var
 
 
 

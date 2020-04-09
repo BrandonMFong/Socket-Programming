@@ -1,0 +1,3 @@
+
+Socket: 
+    - I think a good first step is to make them talk to each other locally then figure out how to communicate from server distances
