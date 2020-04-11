@@ -7,8 +7,6 @@
 #include <stdio.h>
 #include "Client.h"
 
-const int MESSAGELENGTH = 100;
-
 int main() 
 {
    printf("Hello World!");

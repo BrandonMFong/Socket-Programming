@@ -1,2 +1,9 @@
 # Scripts
 TransferToServer.ps1
+.vs/*
+src/Client/Client.sln
+src/Client/Client.vcxproj
+src/Client/Client.vcxproj.filters
+src/Client/Client.vcxproj.user
+src/Client/Debug/*
+src/Client/.vs/*
