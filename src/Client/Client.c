@@ -9,7 +9,15 @@
 
 int main() 
 {
-   printf("Hello World!");
+
+   char msg[100] = "";
+
+   puts("[Enter message to send to server]");
+   fgets(msg, 100, stdin);
+
+   printf("\nYour Message: %s\n", msg);
+
+   // Do stuff to send to server
 
    return 0;
 }
