@@ -1,0 +1,533 @@
+. 2020-04-12 11:14:29.976 --------------------------------------------------------------------------
+. 2020-04-12 11:14:29.977 WinSCP Version 5.17.3 (Build 10325) (OS 10.0.18362 - Windows 10 Home)
+. 2020-04-12 11:14:29.977 Configuration: nul
+. 2020-04-12 11:14:29.977 Log level: Normal
+. 2020-04-12 11:14:29.977 Local account: BRANDONMFONG\BrandonMFong
+. 2020-04-12 11:14:29.977 Working directory: B:\COLLEGE\19_20\Spring_20\CompE_560\Projects\Socket
+. 2020-04-12 11:14:29.977 Process ID: 20436
+. 2020-04-12 11:14:29.978 Command-line: "C:\Program Files (x86)\WinSCP\winscp.exe" /console=5.17.3 /consoleinstance=_14268_622 "/log=B:\COLLEGE\19_20\Spring_20\CompE_560\Projects\Socket\socket.log" "/ini=nul" "/command" "open sftp://fong:***@jason.sdsu.edu/ -hostkey=""ssh-rsa 2048 lCdr8lwwuacgr0VBJcuCl+3hs4gJirj2c5c3/6Jg9Q4=""" "lcd B:\COLLEGE\19_20\Spring_20\CompE_560\Projects\Socket" "cd /home/fong/COMPE560/SocketProgram" "put src" "exit"
+. 2020-04-12 11:14:30.460 Time zone: Current: GMT-7, Standard: GMT-8 (Pacific Standard Time), DST: GMT-7 (Pacific Daylight Time), DST Start: 3/8/2020, DST End: 11/1/2020
+. 2020-04-12 11:14:30.460 Login time: Sunday, April 12, 2020 11:14:30 AM
+. 2020-04-12 11:14:30.460 --------------------------------------------------------------------------
+. 2020-04-12 11:14:30.460 Script: Retrospectively logging previous script records:
+> 2020-04-12 11:14:30.460 Script: open sftp://fong:***@jason.sdsu.edu/ -hostkey="ssh-rsa 2048 lCdr8lwwuacgr0VBJcuCl+3hs4gJirj2c5c3/6Jg9Q4="
+. 2020-04-12 11:14:30.460 --------------------------------------------------------------------------
+. 2020-04-12 11:14:30.460 Session name: fong@jason.sdsu.edu (Ad-Hoc site)
+. 2020-04-12 11:14:30.460 Host name: jason.sdsu.edu (Port: 22)
+. 2020-04-12 11:14:30.460 User name: fong (Password: Yes, Key file: No, Passphrase: No)
+. 2020-04-12 11:14:30.460 Tunnel: No
+. 2020-04-12 11:14:30.460 Transfer Protocol: SFTP
+. 2020-04-12 11:14:30.460 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2020-04-12 11:14:30.460 Disable Nagle: No
+. 2020-04-12 11:14:30.460 Proxy: None
+. 2020-04-12 11:14:30.460 Send buffer: 262144
+. 2020-04-12 11:14:30.460 SSH protocol version: 2; Compression: No
+. 2020-04-12 11:14:30.460 Bypass authentication: No
+. 2020-04-12 11:14:30.460 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2020-04-12 11:14:30.460 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2020-04-12 11:14:30.460 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2020-04-12 11:14:30.460 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2020-04-12 11:14:30.460 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2020-04-12 11:14:30.460 Simple channel: Yes
+. 2020-04-12 11:14:30.460 Return code variable: Autodetect; Lookup user groups: Auto
+. 2020-04-12 11:14:30.460 Shell: default
+. 2020-04-12 11:14:30.460 EOL: LF, UTF: Auto
+. 2020-04-12 11:14:30.461 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2020-04-12 11:14:30.461 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2020-04-12 11:14:30.461 SFTP Bugs: Auto,Auto
+. 2020-04-12 11:14:30.461 SFTP Server: default
+. 2020-04-12 11:14:30.461 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2020-04-12 11:14:30.461 Cache directory changes: Yes, Permanent: Yes
+. 2020-04-12 11:14:30.461 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2020-04-12 11:14:30.461 DST mode: Unix
+. 2020-04-12 11:14:30.461 --------------------------------------------------------------------------
+. 2020-04-12 11:14:30.462 Looking up host "jason.sdsu.edu" for SSH connection
+. 2020-04-12 11:14:30.469 Connecting to 130.191.166.3 port 22
+. 2020-04-12 11:14:30.492 We claim version: SSH-2.0-WinSCP_release_5.17.3
+. 2020-04-12 11:14:30.626 Remote version: SSH-2.0-OpenSSH_5.2
+. 2020-04-12 11:14:30.626 We believe remote version has SSH-2 channel request bug
+. 2020-04-12 11:14:30.626 Using SSH protocol version 2
+. 2020-04-12 11:14:30.629 No GSSAPI security context available
+. 2020-04-12 11:14:30.629 Have a known host key of type rsa2
+. 2020-04-12 11:14:30.655 Doing Diffie-Hellman group exchange
+. 2020-04-12 11:14:30.718 Doing Diffie-Hellman key exchange using 4096-bit modulus and hash SHA-256 with a server-supplied group
+. 2020-04-12 11:14:33.387 Server also has ssh-dss host key, but we don't know it
+. 2020-04-12 11:14:33.387 Host key fingerprint is:
+. 2020-04-12 11:14:33.387 ssh-rsa 2048 50:4d:a3:4a:ed:b5:9a:f0:7f:5f:27:5d:92:13:bb:0b lCdr8lwwuacgr0VBJcuCl+3hs4gJirj2c5c3/6Jg9Q4=
+. 2020-04-12 11:14:33.387 Host key matches configured key fingerprint
+. 2020-04-12 11:14:33.388 Initialised AES-256 SDCTR (AES-NI accelerated) outbound encryption
+. 2020-04-12 11:14:33.388 Initialised HMAC-SHA-1 outbound MAC algorithm
+. 2020-04-12 11:14:33.388 Initialised AES-256 SDCTR (AES-NI accelerated) inbound encryption
+. 2020-04-12 11:14:33.388 Initialised HMAC-SHA-1 inbound MAC algorithm
+! 2020-04-12 11:14:33.411 Using username "fong".
+. 2020-04-12 11:14:33.444 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2020-04-12 11:14:33.444 Attempting keyboard-interactive authentication
+. 2020-04-12 11:14:33.464 Server refused keyboard-interactive authentication
+. 2020-04-12 11:14:33.464 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2020-04-12 11:14:33.464 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2020-04-12 11:14:33.464 Using stored password.
+. 2020-04-12 11:14:33.464 Sent password
+. 2020-04-12 11:14:33.493 Access granted
+. 2020-04-12 11:14:33.493 Opening main session channel
+. 2020-04-12 11:14:33.523 Opened main channel
+. 2020-04-12 11:14:33.548 Started a shell/command
+. 2020-04-12 11:14:33.548 --------------------------------------------------------------------------
+. 2020-04-12 11:14:33.548 Using SFTP protocol.
+. 2020-04-12 11:14:33.548 Doing startup conversation with host.
+> 2020-04-12 11:14:33.550 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2020-04-12 11:14:34.189 Type: SSH_FXP_VERSION, Size: 95, Number: -1
+. 2020-04-12 11:14:34.189 SFTP version 3 negotiated.
+. 2020-04-12 11:14:34.189 Unknown server extension posix-rename@openssh.com="1"
+. 2020-04-12 11:14:34.189 Supports statvfs@openssh.com extension version "2"
+. 2020-04-12 11:14:34.189 Unknown server extension fstatvfs@openssh.com="2"
+. 2020-04-12 11:14:34.189 We believe the server has signed timestamps bug
+. 2020-04-12 11:14:34.189 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2020-04-12 11:14:34.189 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2020-04-12 11:14:34.189 Getting current directory name.
+. 2020-04-12 11:14:34.189 Getting real path for '.'
+> 2020-04-12 11:14:34.189 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2020-04-12 11:14:34.210 Type: SSH_FXP_NAME, Size: 41, Number: 16
+. 2020-04-12 11:14:34.210 Real path is '/home/fong'
+. 2020-04-12 11:14:34.210 Startup conversation with host finished.
+< 2020-04-12 11:14:34.210 Script: Active session: [1] fong@jason.sdsu.edu
+> 2020-04-12 11:14:34.212 Script: lcd B:\COLLEGE\19_20\Spring_20\CompE_560\Projects\Socket
+< 2020-04-12 11:14:34.212 Script: B:\COLLEGE\19_20\Spring_20\CompE_560\Projects\Socket
+> 2020-04-12 11:14:34.218 Script: cd /home/fong/COMPE560/SocketProgram
+. 2020-04-12 11:14:34.218 Changing directory to "/home/fong/COMPE560/SocketProgram".
+. 2020-04-12 11:14:34.218 Getting real path for '/home/fong/COMPE560/SocketProgram'
+> 2020-04-12 11:14:34.218 Type: SSH_FXP_REALPATH, Size: 42, Number: 272
+< 2020-04-12 11:14:34.238 Type: SSH_FXP_NAME, Size: 87, Number: 272
+. 2020-04-12 11:14:34.238 Real path is '/home/fong/COMPE560/SocketProgram'
+. 2020-04-12 11:14:34.238 Trying to open directory "/home/fong/COMPE560/SocketProgram".
+> 2020-04-12 11:14:34.238 Type: SSH_FXP_LSTAT, Size: 42, Number: 519
+< 2020-04-12 11:14:34.257 Type: SSH_FXP_ATTRS, Size: 37, Number: 519
+. 2020-04-12 11:14:34.257 Getting current directory name.
+< 2020-04-12 11:14:34.257 Script: /home/fong/COMPE560/SocketProgram
+> 2020-04-12 11:14:34.260 Script: put src
+. 2020-04-12 11:14:34.260 Copying 1 files/directories to remote directory "/home/fong/COMPE560/SocketProgram"
+. 2020-04-12 11:14:34.260   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2020-04-12 11:14:34.260   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2020-04-12 11:14:34.260   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2020-04-12 11:14:34.260 Getting real path for '/home/fong/COMPE560/SocketProgram'
+> 2020-04-12 11:14:34.260 Type: SSH_FXP_REALPATH, Size: 42, Number: 784
+< 2020-04-12 11:14:34.278 Type: SSH_FXP_NAME, Size: 87, Number: 784
+. 2020-04-12 11:14:34.278 Real path is '/home/fong/COMPE560/SocketProgram'
+. 2020-04-12 11:14:34.278 File: 'src' [2020-04-11T18:23:31.193Z] [0]
+. 2020-04-12 11:14:34.279 Listing file "/home/fong/COMPE560/SocketProgram/src".
+> 2020-04-12 11:14:34.279 Type: SSH_FXP_LSTAT, Size: 46, Number: 1031
+< 2020-04-12 11:14:34.298 Type: SSH_FXP_STATUS, Size: 29, Number: 1031
+< 2020-04-12 11:14:34.298 Status code: 2, Message: 1031, Server: No such file, Language:  
+. 2020-04-12 11:14:34.298 Creating directory "/home/fong/COMPE560/SocketProgram/src/".
+. 2020-04-12 11:14:34.298 Canonifying: "/home/fong/COMPE560/SocketProgram/src/"
+. 2020-04-12 11:14:34.298 Getting real path for '/home/fong/COMPE560/SocketProgram/src/'
+> 2020-04-12 11:14:34.298 Type: SSH_FXP_REALPATH, Size: 47, Number: 1552
+< 2020-04-12 11:14:34.318 Type: SSH_FXP_STATUS, Size: 29, Number: 1552
+< 2020-04-12 11:14:34.318 Status code: 2, Message: 1552, Server: No such file, Language:  
+. 2020-04-12 11:14:34.318 Getting real path for '/home/fong/COMPE560/SocketProgram/'
+> 2020-04-12 11:14:34.318 Type: SSH_FXP_REALPATH, Size: 43, Number: 1808
+< 2020-04-12 11:14:34.344 Type: SSH_FXP_NAME, Size: 87, Number: 1808
+. 2020-04-12 11:14:34.344 Real path is '/home/fong/COMPE560/SocketProgram'
+. 2020-04-12 11:14:34.344 Canonified: "/home/fong/COMPE560/SocketProgram/src"
+> 2020-04-12 11:14:34.344 Type: SSH_FXP_MKDIR, Size: 50, Number: 1294
+< 2020-04-12 11:14:34.414 Type: SSH_FXP_STATUS, Size: 24, Number: 1294
+< 2020-04-12 11:14:34.414 Status code: 0
+. 2020-04-12 11:14:34.414 File: 'src\Client' [2020-04-12T18:12:38.148Z] [0]
+. 2020-04-12 11:14:34.414 Listing file "/home/fong/COMPE560/SocketProgram/src/Client".
+> 2020-04-12 11:14:34.414 Type: SSH_FXP_LSTAT, Size: 53, Number: 2055
+< 2020-04-12 11:14:34.434 Type: SSH_FXP_STATUS, Size: 29, Number: 2055
+< 2020-04-12 11:14:34.434 Status code: 2, Message: 2055, Server: No such file, Language:  
+. 2020-04-12 11:14:34.434 Creating directory "/home/fong/COMPE560/SocketProgram/src/Client/".
+. 2020-04-12 11:14:34.434 Canonifying: "/home/fong/COMPE560/SocketProgram/src/Client/"
+. 2020-04-12 11:14:34.434 Getting real path for '/home/fong/COMPE560/SocketProgram/src/Client/'
+> 2020-04-12 11:14:34.434 Type: SSH_FXP_REALPATH, Size: 54, Number: 2576
+< 2020-04-12 11:14:34.456 Type: SSH_FXP_STATUS, Size: 29, Number: 2576
+< 2020-04-12 11:14:34.456 Status code: 2, Message: 2576, Server: No such file, Language:  
+. 2020-04-12 11:14:34.456 Getting real path for '/home/fong/COMPE560/SocketProgram/src/'
+> 2020-04-12 11:14:34.456 Type: SSH_FXP_REALPATH, Size: 47, Number: 2832
+< 2020-04-12 11:14:34.481 Type: SSH_FXP_NAME, Size: 95, Number: 2832
+. 2020-04-12 11:14:34.481 Real path is '/home/fong/COMPE560/SocketProgram/src'
+. 2020-04-12 11:14:34.481 Canonified: "/home/fong/COMPE560/SocketProgram/src/Client"
+> 2020-04-12 11:14:34.481 Type: SSH_FXP_MKDIR, Size: 57, Number: 2318
+< 2020-04-12 11:14:34.531 Type: SSH_FXP_STATUS, Size: 24, Number: 2318
+< 2020-04-12 11:14:34.531 Status code: 0
+. 2020-04-12 11:14:34.531 File: 'src\Client\.vs' [2020-04-11T18:00:43.359Z] [0]
+. 2020-04-12 11:14:34.531 Listing file "/home/fong/COMPE560/SocketProgram/src/Client/.vs".
+> 2020-04-12 11:14:34.531 Type: SSH_FXP_LSTAT, Size: 57, Number: 3079
+< 2020-04-12 11:14:34.552 Type: SSH_FXP_STATUS, Size: 29, Number: 3079
+< 2020-04-12 11:14:34.552 Status code: 2, Message: 3079, Server: No such file, Language:  
+. 2020-04-12 11:14:34.552 Creating directory "/home/fong/COMPE560/SocketProgram/src/Client/.vs/".
+. 2020-04-12 11:14:34.552 Canonifying: "/home/fong/COMPE560/SocketProgram/src/Client/.vs/"
+. 2020-04-12 11:14:34.552 Getting real path for '/home/fong/COMPE560/SocketProgram/src/Client/.vs/'
+> 2020-04-12 11:14:34.552 Type: SSH_FXP_REALPATH, Size: 58, Number: 3600
+< 2020-04-12 11:14:34.573 Type: SSH_FXP_STATUS, Size: 29, Number: 3600
+< 2020-04-12 11:14:34.573 Status code: 2, Message: 3600, Server: No such file, Language:  
+. 2020-04-12 11:14:34.573 Getting real path for '/home/fong/COMPE560/SocketProgram/src/Client/'
+> 2020-04-12 11:14:34.573 Type: SSH_FXP_REALPATH, Size: 54, Number: 3856
+< 2020-04-12 11:14:34.593 Type: SSH_FXP_NAME, Size: 109, Number: 3856
+. 2020-04-12 11:14:34.593 Real path is '/home/fong/COMPE560/SocketProgram/src/Client'
+. 2020-04-12 11:14:34.593 Canonified: "/home/fong/COMPE560/SocketProgram/src/Client/.vs"
+> 2020-04-12 11:14:34.593 Type: SSH_FXP_MKDIR, Size: 61, Number: 3342
+< 2020-04-12 11:14:34.628 Type: SSH_FXP_STATUS, Size: 24, Number: 3342
+< 2020-04-12 11:14:34.628 Status code: 0
+. 2020-04-12 11:14:34.628 File: 'src\Client\.vs\Client' [2020-04-11T18:00:43.359Z] [0]
+. 2020-04-12 11:14:34.628 Listing file "/home/fong/COMPE560/SocketProgram/src/Client/.vs/Client".
+> 2020-04-12 11:14:34.628 Type: SSH_FXP_LSTAT, Size: 64, Number: 4103
+< 2020-04-12 11:14:34.648 Type: SSH_FXP_STATUS, Size: 29, Number: 4103
+< 2020-04-12 11:14:34.648 Status code: 2, Message: 4103, Server: No such file, Language:  
+. 2020-04-12 11:14:34.648 Creating directory "/home/fong/COMPE560/SocketProgram/src/Client/.vs/Client/".
+. 2020-04-12 11:14:34.648 Canonifying: "/home/fong/COMPE560/SocketProgram/src/Client/.vs/Client/"
+. 2020-04-12 11:14:34.648 Getting real path for '/home/fong/COMPE560/SocketProgram/src/Client/.vs/Client/'
+> 2020-04-12 11:14:34.648 Type: SSH_FXP_REALPATH, Size: 65, Number: 4624
+< 2020-04-12 11:14:34.670 Type: SSH_FXP_STATUS, Size: 29, Number: 4624
+< 2020-04-12 11:14:34.670 Status code: 2, Message: 4624, Server: No such file, Language:  
+. 2020-04-12 11:14:34.670 Getting real path for '/home/fong/COMPE560/SocketProgram/src/Client/.vs/'
+> 2020-04-12 11:14:34.670 Type: SSH_FXP_REALPATH, Size: 58, Number: 4880
+< 2020-04-12 11:14:34.689 Type: SSH_FXP_NAME, Size: 117, Number: 4880
+. 2020-04-12 11:14:34.689 Real path is '/home/fong/COMPE560/SocketProgram/src/Client/.vs'
+. 2020-04-12 11:14:34.689 Canonified: "/home/fong/COMPE560/SocketProgram/src/Client/.vs/Client"
+> 2020-04-12 11:14:34.689 Type: SSH_FXP_MKDIR, Size: 68, Number: 4366
+< 2020-04-12 11:14:34.725 Type: SSH_FXP_STATUS, Size: 24, Number: 4366
+< 2020-04-12 11:14:34.725 Status code: 0
+. 2020-04-12 11:14:34.725 File: 'src\Client\.vs\Client\v16' [2020-04-12T17:28:38.908Z] [0]
+. 2020-04-12 11:14:34.725 Listing file "/home/fong/COMPE560/SocketProgram/src/Client/.vs/Client/v16".
+> 2020-04-12 11:14:34.725 Type: SSH_FXP_LSTAT, Size: 68, Number: 5127
+< 2020-04-12 11:14:34.747 Type: SSH_FXP_STATUS, Size: 29, Number: 5127
+< 2020-04-12 11:14:34.747 Status code: 2, Message: 5127, Server: No such file, Language:  
+. 2020-04-12 11:14:34.747 Creating directory "/home/fong/COMPE560/SocketProgram/src/Client/.vs/Client/v16/".
+. 2020-04-12 11:14:34.747 Canonifying: "/home/fong/COMPE560/SocketProgram/src/Client/.vs/Client/v16/"
+. 2020-04-12 11:14:34.747 Getting real path for '/home/fong/COMPE560/SocketProgram/src/Client/.vs/Client/v16/'
+> 2020-04-12 11:14:34.747 Type: SSH_FXP_REALPATH, Size: 69, Number: 5648
+< 2020-04-12 11:14:34.774 Type: SSH_FXP_STATUS, Size: 29, Number: 5648
+< 2020-04-12 11:14:34.774 Status code: 2, Message: 5648, Server: No such file, Language:  
+. 2020-04-12 11:14:34.774 Getting real path for '/home/fong/COMPE560/SocketProgram/src/Client/.vs/Client/'
+> 2020-04-12 11:14:34.774 Type: SSH_FXP_REALPATH, Size: 65, Number: 5904
+< 2020-04-12 11:14:34.793 Type: SSH_FXP_NAME, Size: 131, Number: 5904
+. 2020-04-12 11:14:34.793 Real path is '/home/fong/COMPE560/SocketProgram/src/Client/.vs/Client'
+. 2020-04-12 11:14:34.793 Canonified: "/home/fong/COMPE560/SocketProgram/src/Client/.vs/Client/v16"
+> 2020-04-12 11:14:34.793 Type: SSH_FXP_MKDIR, Size: 72, Number: 5390
+< 2020-04-12 11:14:34.827 Type: SSH_FXP_STATUS, Size: 24, Number: 5390
+< 2020-04-12 11:14:34.827 Status code: 0
+. 2020-04-12 11:14:34.827 File: 'src\Client\.vs\Client\v16\.suo' [2020-04-12T17:46:11.235Z] [34304]
+. 2020-04-12 11:14:34.827 Copying "src\Client\.vs\Client\v16\.suo" to remote directory started.
+. 2020-04-12 11:14:34.827 Binary transfer mode selected.
+. 2020-04-12 11:14:34.828 Opening remote file.
+> 2020-04-12 11:14:34.828 Type: SSH_FXP_OPEN, Size: 89, Number: 6147
+< 2020-04-12 11:14:34.863 Type: SSH_FXP_HANDLE, Size: 13, Number: 6147
+> 2020-04-12 11:14:34.863 Type: SSH_FXP_WRITE, Size: 32761, Number: 6662
+. 2020-04-12 11:14:34.863 1 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2020-04-12 11:14:34.864 Type: SSH_FXP_CLOSE, Size: 13, Number: 7172
+> 2020-04-12 11:14:34.864 Type: SSH_FXP_SETSTAT, Size: 85, Number: 6409
+< 2020-04-12 11:14:34.921 Type: SSH_FXP_STATUS, Size: 24, Number: 6662
+< 2020-04-12 11:14:34.921 Status code: 0
+< 2020-04-12 11:14:34.921 Type: SSH_FXP_STATUS, Size: 24, Number: 6918
+< 2020-04-12 11:14:34.921 Status code: 0
+< 2020-04-12 11:14:34.979 Type: SSH_FXP_STATUS, Size: 24, Number: 7172
+< 2020-04-12 11:14:34.979 Status code: 0
+. 2020-04-12 11:14:34.980 Preserving timestamp [2020-04-12T17:46:11.000Z]
+< 2020-04-12 11:14:34.987 Type: SSH_FXP_STATUS, Size: 24, Number: 6409
+< 2020-04-12 11:14:34.987 Status code: 0
+. 2020-04-12 11:14:34.987 Transfer done: 'src\Client\.vs\Client\v16\.suo' => '/home/fong/COMPE560/SocketProgram/src/Client/.vs/Client/v16/.suo' [34304]
+. 2020-04-12 11:14:34.987 File: 'src\Client\.vs\Client\v16\Browse.VC.db' [2020-04-12T18:04:31.841Z] [34603008]
+. 2020-04-12 11:14:34.988 Copying "src\Client\.vs\Client\v16\Browse.VC.db" to remote directory started.
+. 2020-04-12 11:14:34.988 Binary transfer mode selected.
+. 2020-04-12 11:14:34.988 Opening remote file.
+> 2020-04-12 11:14:34.988 Type: SSH_FXP_OPEN, Size: 106, Number: 7427
+< 2020-04-12 11:14:35.019 Type: SSH_FXP_HANDLE, Size: 13, Number: 7427
+> 2020-04-12 11:14:35.019 Type: SSH_FXP_WRITE, Size: 32761, Number: 7942
+. 2020-04-12 11:15:12.692 2101 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2020-04-12 11:15:12.693 Type: SSH_FXP_CLOSE, Size: 13, Number: 278788
+< 2020-04-12 11:15:12.703 Type: SSH_FXP_STATUS, Size: 24, Number: 275206
+< 2020-04-12 11:15:12.703 Status code: 0
+< 2020-04-12 11:15:12.734 Type: SSH_FXP_STATUS, Size: 24, Number: 275462
+< 2020-04-12 11:15:12.734 Status code: 0
+< 2020-04-12 11:15:12.763 Type: SSH_FXP_STATUS, Size: 24, Number: 275718
+< 2020-04-12 11:15:12.763 Status code: 0
+< 2020-04-12 11:15:12.793 Type: SSH_FXP_STATUS, Size: 24, Number: 275974
+< 2020-04-12 11:15:12.793 Status code: 0
+< 2020-04-12 11:15:12.826 Type: SSH_FXP_STATUS, Size: 24, Number: 276230
+< 2020-04-12 11:15:12.826 Status code: 0
+< 2020-04-12 11:15:12.857 Type: SSH_FXP_STATUS, Size: 24, Number: 276486
+< 2020-04-12 11:15:12.857 Status code: 0
+< 2020-04-12 11:15:12.892 Type: SSH_FXP_STATUS, Size: 24, Number: 276742
+< 2020-04-12 11:15:12.892 Status code: 0
+< 2020-04-12 11:15:12.921 Type: SSH_FXP_STATUS, Size: 24, Number: 276998
+< 2020-04-12 11:15:12.921 Status code: 0
+< 2020-04-12 11:15:12.954 Type: SSH_FXP_STATUS, Size: 24, Number: 277254
+< 2020-04-12 11:15:12.954 Status code: 0
+< 2020-04-12 11:15:12.983 Type: SSH_FXP_STATUS, Size: 24, Number: 277510
+< 2020-04-12 11:15:12.983 Status code: 0
+< 2020-04-12 11:15:13.016 Type: SSH_FXP_STATUS, Size: 24, Number: 277766
+< 2020-04-12 11:15:13.016 Status code: 0
+< 2020-04-12 11:15:13.048 Type: SSH_FXP_STATUS, Size: 24, Number: 278022
+< 2020-04-12 11:15:13.048 Status code: 0
+< 2020-04-12 11:15:13.082 Type: SSH_FXP_STATUS, Size: 24, Number: 278278
+< 2020-04-12 11:15:13.082 Status code: 0
+< 2020-04-12 11:15:13.082 Type: SSH_FXP_STATUS, Size: 24, Number: 278534
+< 2020-04-12 11:15:13.082 Status code: 0
+< 2020-04-12 11:15:13.416 Type: SSH_FXP_STATUS, Size: 24, Number: 278788
+< 2020-04-12 11:15:13.416 Status code: 0
+> 2020-04-12 11:15:13.417 Type: SSH_FXP_RENAME, Size: 166, Number: 279058
+< 2020-04-12 11:15:13.504 Type: SSH_FXP_STATUS, Size: 24, Number: 279058
+< 2020-04-12 11:15:13.504 Status code: 0
+. 2020-04-12 11:15:13.504 Preserving timestamp [2020-04-12T18:04:31.000Z]
+> 2020-04-12 11:15:13.504 Type: SSH_FXP_SETSTAT, Size: 93, Number: 7689
+< 2020-04-12 11:15:13.534 Type: SSH_FXP_STATUS, Size: 24, Number: 7689
+< 2020-04-12 11:15:13.534 Status code: 0
+. 2020-04-12 11:15:13.534 Transfer done: 'src\Client\.vs\Client\v16\Browse.VC.db' => '/home/fong/COMPE560/SocketProgram/src/Client/.vs/Client/v16/Browse.VC.db' [34603008]
+. 2020-04-12 11:15:13.534 File: 'src\Client\.vs\Client\v16\Browse.VC.opendb' [2020-04-12T17:28:38.909Z] [50]
+* 2020-04-12 11:15:13.535 (EOSError) System Error.  Code: 32.
+* 2020-04-12 11:15:13.535 The process cannot access the file because it is being used by another process
+. 2020-04-12 11:15:13.535 Asking user:
+. 2020-04-12 11:15:13.535 Can't open file 'src\Client\.vs\Client\v16\Browse.VC.opendb'. ("System Error.  Code: 32.
+. 2020-04-12 11:15:13.535 The process cannot access the file because it is being used by another process")
+< 2020-04-12 11:15:13.535 Script: Can't open file 'src\Client\.vs\Client\v16\Browse.VC.opendb'.
+< 2020-04-12 11:15:13.535 Script: System Error.  Code: 32.
+< 2020-04-12 11:15:13.535 The process cannot access the file because it is being used by another process
+* 2020-04-12 11:15:13.538 (ESkipFile) Can't open file 'src\Client\.vs\Client\v16\Browse.VC.opendb'.
+* 2020-04-12 11:15:13.538 System Error.  Code: 32.
+* 2020-04-12 11:15:13.538 The process cannot access the file because it is being used by another process
+. 2020-04-12 11:15:13.538 Copying finished: Transferred: 34,637,312, Elapsed: 0:00:39, CPS: 959,464/s
+. 2020-04-12 11:15:13.538 Script: Failed
+. 2020-04-12 11:15:13.538 Script: Exit code: 1
+. 2020-04-12 11:15:13.538 Closing connection.
+. 2020-04-12 11:15:13.538 Sending special code: 1
+. 2020-04-12 11:15:13.563 Session sent command exit status 0
+. 2020-04-12 11:15:13.563 Main session channel closed
+. 2020-04-12 11:15:13.563 All channels closed
+. 2020-04-12 11:15:33.669 --------------------------------------------------------------------------
+. 2020-04-12 11:15:33.669 WinSCP Version 5.17.3 (Build 10325) (OS 10.0.18362 - Windows 10 Home)
+. 2020-04-12 11:15:33.669 Configuration: nul
+. 2020-04-12 11:15:33.669 Log level: Normal
+. 2020-04-12 11:15:33.669 Local account: BRANDONMFONG\BrandonMFong
+. 2020-04-12 11:15:33.669 Working directory: B:\COLLEGE\19_20\Spring_20\CompE_560\Projects\Socket
+. 2020-04-12 11:15:33.669 Process ID: 17080
+. 2020-04-12 11:15:33.670 Command-line: "C:\Program Files (x86)\WinSCP\winscp.exe" /console=5.17.3 /consoleinstance=_21908_505 "/log=B:\COLLEGE\19_20\Spring_20\CompE_560\Projects\Socket\socket.log" "/ini=nul" "/command" "open sftp://fong:***@jason.sdsu.edu/ -hostkey=""ssh-rsa 2048 lCdr8lwwuacgr0VBJcuCl+3hs4gJirj2c5c3/6Jg9Q4=""" "lcd B:\COLLEGE\19_20\Spring_20\CompE_560\Projects\Socket" "cd /home/fong/COMPE560/SocketProgram" "put src" "exit"
+. 2020-04-12 11:15:33.670 Time zone: Current: GMT-7, Standard: GMT-8 (Pacific Standard Time), DST: GMT-7 (Pacific Daylight Time), DST Start: 3/8/2020, DST End: 11/1/2020
+. 2020-04-12 11:15:33.670 Login time: Sunday, April 12, 2020 11:15:33 AM
+. 2020-04-12 11:15:33.670 --------------------------------------------------------------------------
+. 2020-04-12 11:15:33.670 Script: Retrospectively logging previous script records:
+> 2020-04-12 11:15:33.670 Script: open sftp://fong:***@jason.sdsu.edu/ -hostkey="ssh-rsa 2048 lCdr8lwwuacgr0VBJcuCl+3hs4gJirj2c5c3/6Jg9Q4="
+. 2020-04-12 11:15:33.670 --------------------------------------------------------------------------
+. 2020-04-12 11:15:33.670 Session name: fong@jason.sdsu.edu (Ad-Hoc site)
+. 2020-04-12 11:15:33.670 Host name: jason.sdsu.edu (Port: 22)
+. 2020-04-12 11:15:33.670 User name: fong (Password: Yes, Key file: No, Passphrase: No)
+. 2020-04-12 11:15:33.670 Tunnel: No
+. 2020-04-12 11:15:33.670 Transfer Protocol: SFTP
+. 2020-04-12 11:15:33.670 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2020-04-12 11:15:33.670 Disable Nagle: No
+. 2020-04-12 11:15:33.670 Proxy: None
+. 2020-04-12 11:15:33.670 Send buffer: 262144
+. 2020-04-12 11:15:33.670 SSH protocol version: 2; Compression: No
+. 2020-04-12 11:15:33.670 Bypass authentication: No
+. 2020-04-12 11:15:33.670 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2020-04-12 11:15:33.670 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2020-04-12 11:15:33.670 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2020-04-12 11:15:33.670 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2020-04-12 11:15:33.670 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2020-04-12 11:15:33.670 Simple channel: Yes
+. 2020-04-12 11:15:33.670 Return code variable: Autodetect; Lookup user groups: Auto
+. 2020-04-12 11:15:33.670 Shell: default
+. 2020-04-12 11:15:33.670 EOL: LF, UTF: Auto
+. 2020-04-12 11:15:33.670 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2020-04-12 11:15:33.670 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2020-04-12 11:15:33.670 SFTP Bugs: Auto,Auto
+. 2020-04-12 11:15:33.670 SFTP Server: default
+. 2020-04-12 11:15:33.670 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2020-04-12 11:15:33.670 Cache directory changes: Yes, Permanent: Yes
+. 2020-04-12 11:15:33.670 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2020-04-12 11:15:33.670 DST mode: Unix
+. 2020-04-12 11:15:33.670 --------------------------------------------------------------------------
+. 2020-04-12 11:15:33.671 Looking up host "jason.sdsu.edu" for SSH connection
+. 2020-04-12 11:15:33.678 Connecting to 130.191.166.3 port 22
+. 2020-04-12 11:15:33.700 We claim version: SSH-2.0-WinSCP_release_5.17.3
+. 2020-04-12 11:15:33.828 Remote version: SSH-2.0-OpenSSH_5.2
+. 2020-04-12 11:15:33.828 We believe remote version has SSH-2 channel request bug
+. 2020-04-12 11:15:33.828 Using SSH protocol version 2
+. 2020-04-12 11:15:33.829 No GSSAPI security context available
+. 2020-04-12 11:15:33.830 Have a known host key of type rsa2
+. 2020-04-12 11:15:33.862 Doing Diffie-Hellman group exchange
+. 2020-04-12 11:15:33.923 Doing Diffie-Hellman key exchange using 4096-bit modulus and hash SHA-256 with a server-supplied group
+. 2020-04-12 11:15:36.595 Server also has ssh-dss host key, but we don't know it
+. 2020-04-12 11:15:36.595 Host key fingerprint is:
+. 2020-04-12 11:15:36.595 ssh-rsa 2048 50:4d:a3:4a:ed:b5:9a:f0:7f:5f:27:5d:92:13:bb:0b lCdr8lwwuacgr0VBJcuCl+3hs4gJirj2c5c3/6Jg9Q4=
+. 2020-04-12 11:15:36.596 Host key matches configured key fingerprint
+. 2020-04-12 11:15:36.596 Initialised AES-256 SDCTR (AES-NI accelerated) outbound encryption
+. 2020-04-12 11:15:36.596 Initialised HMAC-SHA-1 outbound MAC algorithm
+. 2020-04-12 11:15:36.596 Initialised AES-256 SDCTR (AES-NI accelerated) inbound encryption
+. 2020-04-12 11:15:36.596 Initialised HMAC-SHA-1 inbound MAC algorithm
+! 2020-04-12 11:15:36.619 Using username "fong".
+. 2020-04-12 11:15:36.653 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2020-04-12 11:15:36.653 Attempting keyboard-interactive authentication
+. 2020-04-12 11:15:36.676 Server refused keyboard-interactive authentication
+. 2020-04-12 11:15:36.676 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2020-04-12 11:15:36.676 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2020-04-12 11:15:36.676 Using stored password.
+. 2020-04-12 11:15:36.677 Sent password
+. 2020-04-12 11:15:36.703 Access granted
+. 2020-04-12 11:15:36.704 Opening main session channel
+. 2020-04-12 11:15:36.733 Opened main channel
+. 2020-04-12 11:15:36.759 Started a shell/command
+. 2020-04-12 11:15:36.759 --------------------------------------------------------------------------
+. 2020-04-12 11:15:36.759 Using SFTP protocol.
+. 2020-04-12 11:15:36.759 Doing startup conversation with host.
+> 2020-04-12 11:15:36.761 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2020-04-12 11:15:37.394 Type: SSH_FXP_VERSION, Size: 95, Number: -1
+. 2020-04-12 11:15:37.394 SFTP version 3 negotiated.
+. 2020-04-12 11:15:37.394 Unknown server extension posix-rename@openssh.com="1"
+. 2020-04-12 11:15:37.394 Supports statvfs@openssh.com extension version "2"
+. 2020-04-12 11:15:37.394 Unknown server extension fstatvfs@openssh.com="2"
+. 2020-04-12 11:15:37.394 We believe the server has signed timestamps bug
+. 2020-04-12 11:15:37.394 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2020-04-12 11:15:37.394 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2020-04-12 11:15:37.394 Getting current directory name.
+. 2020-04-12 11:15:37.394 Getting real path for '.'
+> 2020-04-12 11:15:37.394 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2020-04-12 11:15:37.417 Type: SSH_FXP_NAME, Size: 41, Number: 16
+. 2020-04-12 11:15:37.417 Real path is '/home/fong'
+. 2020-04-12 11:15:37.417 Startup conversation with host finished.
+< 2020-04-12 11:15:37.417 Script: Active session: [1] fong@jason.sdsu.edu
+> 2020-04-12 11:15:37.420 Script: lcd B:\COLLEGE\19_20\Spring_20\CompE_560\Projects\Socket
+< 2020-04-12 11:15:37.420 Script: B:\COLLEGE\19_20\Spring_20\CompE_560\Projects\Socket
+> 2020-04-12 11:15:37.424 Script: cd /home/fong/COMPE560/SocketProgram
+. 2020-04-12 11:15:37.424 Changing directory to "/home/fong/COMPE560/SocketProgram".
+. 2020-04-12 11:15:37.424 Getting real path for '/home/fong/COMPE560/SocketProgram'
+> 2020-04-12 11:15:37.424 Type: SSH_FXP_REALPATH, Size: 42, Number: 272
+< 2020-04-12 11:15:37.445 Type: SSH_FXP_NAME, Size: 87, Number: 272
+. 2020-04-12 11:15:37.445 Real path is '/home/fong/COMPE560/SocketProgram'
+. 2020-04-12 11:15:37.445 Trying to open directory "/home/fong/COMPE560/SocketProgram".
+> 2020-04-12 11:15:37.445 Type: SSH_FXP_LSTAT, Size: 42, Number: 519
+< 2020-04-12 11:15:37.464 Type: SSH_FXP_ATTRS, Size: 37, Number: 519
+. 2020-04-12 11:15:37.464 Getting current directory name.
+< 2020-04-12 11:15:37.464 Script: /home/fong/COMPE560/SocketProgram
+> 2020-04-12 11:15:37.466 Script: put src
+. 2020-04-12 11:15:37.466 Copying 1 files/directories to remote directory "/home/fong/COMPE560/SocketProgram"
+. 2020-04-12 11:15:37.466   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2020-04-12 11:15:37.466   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2020-04-12 11:15:37.466   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2020-04-12 11:15:37.466 Getting real path for '/home/fong/COMPE560/SocketProgram'
+> 2020-04-12 11:15:37.466 Type: SSH_FXP_REALPATH, Size: 42, Number: 784
+< 2020-04-12 11:15:37.484 Type: SSH_FXP_NAME, Size: 87, Number: 784
+. 2020-04-12 11:15:37.484 Real path is '/home/fong/COMPE560/SocketProgram'
+. 2020-04-12 11:15:37.484 File: 'src' [2020-04-11T18:23:31.193Z] [0]
+. 2020-04-12 11:15:37.485 Listing file "/home/fong/COMPE560/SocketProgram/src".
+> 2020-04-12 11:15:37.485 Type: SSH_FXP_LSTAT, Size: 46, Number: 1031
+< 2020-04-12 11:15:37.504 Type: SSH_FXP_ATTRS, Size: 37, Number: 1031
+. 2020-04-12 11:15:37.504 src;D;0;2020-04-12T18:14:33.000Z;3;"" [2259];"" [300];rwxr-xr-x;0
+. 2020-04-12 11:15:37.504 File: 'src\Client' [2020-04-12T18:12:38.148Z] [0]
+. 2020-04-12 11:15:37.506 Listing file "/home/fong/COMPE560/SocketProgram/src/Client".
+> 2020-04-12 11:15:37.506 Type: SSH_FXP_LSTAT, Size: 53, Number: 1287
+< 2020-04-12 11:15:37.525 Type: SSH_FXP_ATTRS, Size: 37, Number: 1287
+. 2020-04-12 11:15:37.525 Client;D;0;2020-04-12T18:14:33.000Z;3;"" [2259];"" [300];rwxr-xr-x;0
+. 2020-04-12 11:15:37.525 File: 'src\Client\.vs' [2020-04-11T18:00:43.359Z] [0]
+. 2020-04-12 11:15:37.526 Listing file "/home/fong/COMPE560/SocketProgram/src/Client/.vs".
+> 2020-04-12 11:15:37.526 Type: SSH_FXP_LSTAT, Size: 57, Number: 1543
+< 2020-04-12 11:15:37.546 Type: SSH_FXP_ATTRS, Size: 37, Number: 1543
+. 2020-04-12 11:15:37.546 .vs;D;0;2020-04-12T18:14:33.000Z;3;"" [2259];"" [300];rwxr-xr-x;2
+. 2020-04-12 11:15:37.546 File: 'src\Client\.vs\Client' [2020-04-11T18:00:43.359Z] [0]
+. 2020-04-12 11:15:37.546 Listing file "/home/fong/COMPE560/SocketProgram/src/Client/.vs/Client".
+> 2020-04-12 11:15:37.546 Type: SSH_FXP_LSTAT, Size: 64, Number: 1799
+< 2020-04-12 11:15:37.564 Type: SSH_FXP_ATTRS, Size: 37, Number: 1799
+. 2020-04-12 11:15:37.564 Client;D;0;2020-04-12T18:14:33.000Z;3;"" [2259];"" [300];rwxr-xr-x;0
+. 2020-04-12 11:15:37.564 File: 'src\Client\.vs\Client\v16' [2020-04-12T17:28:38.908Z] [0]
+. 2020-04-12 11:15:37.565 Listing file "/home/fong/COMPE560/SocketProgram/src/Client/.vs/Client/v16".
+> 2020-04-12 11:15:37.565 Type: SSH_FXP_LSTAT, Size: 68, Number: 2055
+< 2020-04-12 11:15:37.601 Type: SSH_FXP_ATTRS, Size: 37, Number: 2055
+. 2020-04-12 11:15:37.601 v16;D;0;2020-04-12T18:15:12.000Z;3;"" [2259];"" [300];rwxr-xr-x;0
+. 2020-04-12 11:15:37.601 File: 'src\Client\.vs\Client\v16\.suo' [2020-04-12T17:46:11.235Z] [34304]
+. 2020-04-12 11:15:37.602 Copying "src\Client\.vs\Client\v16\.suo" to remote directory started.
+. 2020-04-12 11:15:37.602 Binary transfer mode selected.
+. 2020-04-12 11:15:37.602 Opening remote file.
+> 2020-04-12 11:15:37.602 Type: SSH_FXP_OPEN, Size: 89, Number: 2307
+< 2020-04-12 11:15:37.637 Type: SSH_FXP_HANDLE, Size: 13, Number: 2307
+> 2020-04-12 11:15:37.637 Type: SSH_FXP_WRITE, Size: 32761, Number: 2822
+. 2020-04-12 11:15:37.638 1 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2020-04-12 11:15:37.638 Type: SSH_FXP_CLOSE, Size: 13, Number: 3332
+> 2020-04-12 11:15:37.638 Type: SSH_FXP_SETSTAT, Size: 85, Number: 2569
+< 2020-04-12 11:15:37.697 Type: SSH_FXP_STATUS, Size: 24, Number: 2822
+< 2020-04-12 11:15:37.697 Status code: 0
+< 2020-04-12 11:15:37.697 Type: SSH_FXP_STATUS, Size: 24, Number: 3078
+< 2020-04-12 11:15:37.697 Status code: 0
+< 2020-04-12 11:15:37.724 Type: SSH_FXP_STATUS, Size: 24, Number: 3332
+< 2020-04-12 11:15:37.724 Status code: 0
+. 2020-04-12 11:15:37.724 Preserving timestamp [2020-04-12T17:46:11.000Z]
+< 2020-04-12 11:15:37.737 Type: SSH_FXP_STATUS, Size: 24, Number: 2569
+< 2020-04-12 11:15:37.737 Status code: 0
+. 2020-04-12 11:15:37.737 Transfer done: 'src\Client\.vs\Client\v16\.suo' => '/home/fong/COMPE560/SocketProgram/src/Client/.vs/Client/v16/.suo' [34304]
+. 2020-04-12 11:15:37.737 File: 'src\Client\.vs\Client\v16\Browse.VC.db' [2020-04-12T18:04:31.841Z] [34603008]
+. 2020-04-12 11:15:37.737 Copying "src\Client\.vs\Client\v16\Browse.VC.db" to remote directory started.
+. 2020-04-12 11:15:37.738 Binary transfer mode selected.
+. 2020-04-12 11:15:37.738 Checking existence of file.
+> 2020-04-12 11:15:37.738 Type: SSH_FXP_LSTAT, Size: 81, Number: 3591
+< 2020-04-12 11:15:37.757 Type: SSH_FXP_ATTRS, Size: 37, Number: 3591
+. 2020-04-12 11:15:37.757 File exists: Browse.VC.db;-;34603008;2020-04-12T18:04:31.000Z;3;"" [2259];"" [300];rw-r--r--;0
+. 2020-04-12 11:15:37.757 Checking existence of partially transferred file.
+> 2020-04-12 11:15:37.757 Type: SSH_FXP_LSTAT, Size: 90, Number: 3847
+< 2020-04-12 11:15:37.777 Type: SSH_FXP_STATUS, Size: 29, Number: 3847
+< 2020-04-12 11:15:37.777 Status code: 2
+. 2020-04-12 11:15:37.777 Opening remote file.
+> 2020-04-12 11:15:37.777 Type: SSH_FXP_OPEN, Size: 106, Number: 4099
+< 2020-04-12 11:15:37.809 Type: SSH_FXP_HANDLE, Size: 13, Number: 4099
+> 2020-04-12 11:15:37.809 Type: SSH_FXP_WRITE, Size: 32761, Number: 4614
+. 2020-04-12 11:16:11.061 2101 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2020-04-12 11:16:11.061 Type: SSH_FXP_CLOSE, Size: 13, Number: 275460
+< 2020-04-12 11:16:11.073 Type: SSH_FXP_STATUS, Size: 24, Number: 271878
+< 2020-04-12 11:16:11.073 Status code: 0
+< 2020-04-12 11:16:11.108 Type: SSH_FXP_STATUS, Size: 24, Number: 272134
+< 2020-04-12 11:16:11.108 Status code: 0
+< 2020-04-12 11:16:11.142 Type: SSH_FXP_STATUS, Size: 24, Number: 272390
+< 2020-04-12 11:16:11.142 Status code: 0
+< 2020-04-12 11:16:11.170 Type: SSH_FXP_STATUS, Size: 24, Number: 272646
+< 2020-04-12 11:16:11.170 Status code: 0
+< 2020-04-12 11:16:11.200 Type: SSH_FXP_STATUS, Size: 24, Number: 272902
+< 2020-04-12 11:16:11.200 Status code: 0
+< 2020-04-12 11:16:11.233 Type: SSH_FXP_STATUS, Size: 24, Number: 273158
+< 2020-04-12 11:16:11.233 Status code: 0
+< 2020-04-12 11:16:11.265 Type: SSH_FXP_STATUS, Size: 24, Number: 273414
+< 2020-04-12 11:16:11.265 Status code: 0
+< 2020-04-12 11:16:11.298 Type: SSH_FXP_STATUS, Size: 24, Number: 273670
+< 2020-04-12 11:16:11.298 Status code: 0
+< 2020-04-12 11:16:11.329 Type: SSH_FXP_STATUS, Size: 24, Number: 273926
+< 2020-04-12 11:16:11.329 Status code: 0
+< 2020-04-12 11:16:11.358 Type: SSH_FXP_STATUS, Size: 24, Number: 274182
+< 2020-04-12 11:16:11.358 Status code: 0
+< 2020-04-12 11:16:11.393 Type: SSH_FXP_STATUS, Size: 24, Number: 274438
+< 2020-04-12 11:16:11.393 Status code: 0
+< 2020-04-12 11:16:11.427 Type: SSH_FXP_STATUS, Size: 24, Number: 274694
+< 2020-04-12 11:16:11.427 Status code: 0
+< 2020-04-12 11:16:11.456 Type: SSH_FXP_STATUS, Size: 24, Number: 274950
+< 2020-04-12 11:16:11.456 Status code: 0
+< 2020-04-12 11:16:11.456 Type: SSH_FXP_STATUS, Size: 24, Number: 275206
+< 2020-04-12 11:16:11.456 Status code: 0
+< 2020-04-12 11:16:11.848 Type: SSH_FXP_STATUS, Size: 24, Number: 275460
+< 2020-04-12 11:16:11.848 Status code: 0
+> 2020-04-12 11:16:11.849 Type: SSH_FXP_REMOVE, Size: 81, Number: 275725
+< 2020-04-12 11:16:11.919 Type: SSH_FXP_STATUS, Size: 24, Number: 275725
+< 2020-04-12 11:16:11.919 Status code: 0
+> 2020-04-12 11:16:11.919 Type: SSH_FXP_RENAME, Size: 166, Number: 275986
+< 2020-04-12 11:16:11.974 Type: SSH_FXP_STATUS, Size: 24, Number: 275986
+< 2020-04-12 11:16:11.974 Status code: 0
+. 2020-04-12 11:16:11.974 Preserving timestamp [2020-04-12T18:04:31.000Z]
+> 2020-04-12 11:16:11.974 Type: SSH_FXP_SETSTAT, Size: 97, Number: 4361
+< 2020-04-12 11:16:12.016 Type: SSH_FXP_STATUS, Size: 24, Number: 4361
+< 2020-04-12 11:16:12.016 Status code: 0
+. 2020-04-12 11:16:12.016 Transfer done: 'src\Client\.vs\Client\v16\Browse.VC.db' => '/home/fong/COMPE560/SocketProgram/src/Client/.vs/Client/v16/Browse.VC.db' [34603008]
+. 2020-04-12 11:16:12.016 File: 'src\Client\.vs\Client\v16\Browse.VC.opendb' [2020-04-12T17:28:38.909Z] [50]
+* 2020-04-12 11:16:12.017 (EOSError) System Error.  Code: 32.
+* 2020-04-12 11:16:12.017 The process cannot access the file because it is being used by another process
+. 2020-04-12 11:16:12.017 Asking user:
+. 2020-04-12 11:16:12.017 Can't open file 'src\Client\.vs\Client\v16\Browse.VC.opendb'. ("System Error.  Code: 32.
+. 2020-04-12 11:16:12.017 The process cannot access the file because it is being used by another process")
+< 2020-04-12 11:16:12.017 Script: Can't open file 'src\Client\.vs\Client\v16\Browse.VC.opendb'.
+< 2020-04-12 11:16:12.017 Script: System Error.  Code: 32.
+< 2020-04-12 11:16:12.017 The process cannot access the file because it is being used by another process
+* 2020-04-12 11:16:12.024 (ESkipFile) Can't open file 'src\Client\.vs\Client\v16\Browse.VC.opendb'.
+* 2020-04-12 11:16:12.024 System Error.  Code: 32.
+* 2020-04-12 11:16:12.024 The process cannot access the file because it is being used by another process
+. 2020-04-12 11:16:12.024 Copying finished: Transferred: 34,637,312, Elapsed: 0:00:34, CPS: 945,302/s
+. 2020-04-12 11:16:12.024 Script: Failed
+. 2020-04-12 11:16:12.024 Script: Exit code: 1
+. 2020-04-12 11:16:12.024 Closing connection.
+. 2020-04-12 11:16:12.024 Sending special code: 1
+. 2020-04-12 11:16:12.049 Session sent command exit status 0
+. 2020-04-12 11:16:12.049 Main session channel closed
+. 2020-04-12 11:16:12.049 All channels closed
