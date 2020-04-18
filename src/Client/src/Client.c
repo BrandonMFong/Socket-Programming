@@ -4,7 +4,6 @@
  * Goal is to take user input from here and send it to Server.c
  * 
  */
-#include <stdio.h>
 #include "Client.h"
 
 int main() 
@@ -22,6 +21,7 @@ int main()
        printf("\nYour Message: %s\n", msg);
 
        // Do stuff to send to server
+       OpenSocket();
 
        ClearString(msg);
    }
