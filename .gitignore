@@ -17,3 +17,5 @@ src/Server/Server.vcxproj.filters
 src/Server/Server.vcxproj.user
 src/Server/Debug/*
 src/Server/.vs/*
+
+*log
