@@ -9,7 +9,7 @@
 
 char* ExitString = "!exit!";
 int sock, addrsize;
-struct sockaddr_in addr;
+struct sockaddr_in * addr;
 char buf[80];
 
 void ClearString(char* string)
@@ -35,9 +35,20 @@ void OpenSocket()
 	sock = socket(AF_INET,SOCK_STREAM,0);
 	if(sock == -1)
 	{
-		perror("Opening Socket...\n");
+		perror("Error occured at opening socket function...\n");
 		exit(-1);
 	}
 }
 
-// End Header
+void ConnectToInternet()
+{
+	addr.sin_family = AF_INET;
+	addr.sin_port = htons(32351);
+	addr.sin_addr.s_addr = inet_network("153.90.192.3");
+	if(connect(sock, &addr, sizeof(struct sockaddr_in)) == -1)
+	{
+		perror("Error occured on connect");
+		exit(-1);
+	}
+}
+

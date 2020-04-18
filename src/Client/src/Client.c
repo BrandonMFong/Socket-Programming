@@ -22,6 +22,7 @@ int main()
 
        // Do stuff to send to server
        OpenSocket();
+       ConnectToInternet();
 
        ClearString(msg);
    }
