@@ -8,24 +8,28 @@
 
 int main() 
 {
-   Greetings();
-   char msg[100] = "";
-   while (1)
-   {
-       
-       puts("[Enter message to send to server]");
-       fgets(msg, 100, stdin);
+    Greetings();
+    char msg[100] = "";
+    char* ExitString = "!exit!";
 
-       IsExit(msg); // checks exit string
+    OpenSocket();
+    ConnectToInternet();
 
-       printf("\nYour Message: %s\n", msg);
+    while (1)
+    {
+        puts("[Enter message to send to server]");
+        fgets(msg, 100, stdin);
 
-       // Do stuff to send to server
-       OpenSocket();
-       ConnectToInternet();
+        IsExit(msg); // checks exit string then
 
-       ClearString(msg);
-   }
+        printf("\nYour Message: %s\n", msg);
 
-   return 0;
+        // Do stuff to send to server
+        SendMessage(msg);
+        ReceiveMessage();
+
+        ClearString(msg);
+    }
+
+    return 0;
 }

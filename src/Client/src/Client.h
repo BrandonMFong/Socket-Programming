@@ -9,26 +9,10 @@
 
 char* ExitString = "!exit!";
 int sock, addrsize;
-struct sockaddr_in * addr;
+struct sockaddr_in addr; //https://www.daniweb.com/programming/software-development/threads/223615/socket-programming-error
+const struct sockaddr_in  * casted_addr = (struct sockaddr_in  * ) &addr;
 char buf[80];
 
-void ClearString(char* string)
-{
-	memset(string, 0, strlen(string));
-}
-
-void Greetings()
-{
-	printf("\n\nWelcome, enter '!exit!' to exit the program when prompted.\n\n");
-}
-
-void IsExit(char* string)
-{
-	if (strstr(string, ExitString) != NULL)
-	{
-		printf("\nExiting program!\n"); exit(0);
-	}
-}
 
 void OpenSocket()
 {
@@ -45,10 +29,52 @@ void ConnectToInternet()
 	addr.sin_family = AF_INET;
 	addr.sin_port = htons(32351);
 	addr.sin_addr.s_addr = inet_network("153.90.192.3");
-	if(connect(sock, &addr, sizeof(struct sockaddr_in)) == -1)
+	if(connect(sock, (struct sockaddr *)&addr, sizeof(struct sockaddr_in)) == -1)
 	{
 		perror("Error occured on connect");
 		exit(-1);
+	}
+}
+
+void SendMessage(char msg[100])
+{
+	send(sock, msg, 38, 0);
+}
+
+void ReceiveMessage()
+{
+	recv(sock, buf, 80, 0);
+}
+
+void CloseSocketConnection()
+{
+	// Shutdown
+	if(shutdown(sock, 1) == -1)
+	{
+		perror("Error on Shutdown");
+		exit(-1);
+	}
+	printf("Client is done \n");
+	close(sock);
+}
+
+void ClearString(char* string)
+{
+	memset(string, 0, strlen(string));
+}
+
+void Greetings()
+{
+	printf("\n\nWelcome, enter '!exit!' to exit the program when prompted.\n\n");
+}
+
+void IsExit(char* string)
+{
+	if (strstr(string, ExitString) != NULL)
+	{
+		printf("\nExiting program!\n"); 
+		CloseSocketConnection();
+		exit(0);
 	}
 }
 
