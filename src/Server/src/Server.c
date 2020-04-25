@@ -1,16 +1,24 @@
 // M1 receives text
 // Jason
 
-#include <stdio.h>
 #include "Server.h"
 
 int main() 
 {
-    char msg[100] = "Hello, my name is Brandon Fong!";
+    char msg[100] = "";
 
-    ReverseString(msg);
+    // ReverseString(msg);
 
-    printf("%s", msg);
+    // printf("%s", msg);
+
+    OpenSocket();
+    BindSocket();
+    
+    while(1)
+    {
+        ListenToSocket();
+    }
 
    return 0;
 }
+

@@ -24,7 +24,7 @@ void OpenSocket()
 	}
 }
 
-void ConnectToInternet()
+void ConnectSocket()
 {
 	addr.sin_family = AF_INET;
 	addr.sin_port = htons(32351);

@@ -13,7 +13,7 @@ int main()
     char* ExitString = "!exit!";
 
     OpenSocket();
-    ConnectToInternet();
+    ConnectSocket();
 
     while (1)
     {

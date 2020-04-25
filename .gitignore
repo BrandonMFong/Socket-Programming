@@ -1,6 +1,9 @@
 # Scripts
 TransferToServer.ps1
+
+# Debugger files
 .vs/*
+.vscode/*
 
 # client source
 src/Client/Client.sln
