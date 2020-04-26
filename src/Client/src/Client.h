@@ -38,7 +38,7 @@ void ConnectSocket()
 
 void SendMessage(char msg[100])
 {
-	send(sock, msg, 38, 0);
+	send(sock, msg, 100, 0);
 }
 
 void ReceiveMessage()

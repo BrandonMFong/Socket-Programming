@@ -25,7 +25,7 @@ int main()
         printf("\nYour Message: %s\n", msg);
 
         // Do stuff to send to server
-        SendMessage(msg);
+        SendMessage(msg); // ERROR IS MESSAGE SIZE
         ReceiveMessage();
 
         ClearString(msg);
