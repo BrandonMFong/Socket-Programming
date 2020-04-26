@@ -17,12 +17,15 @@ int main()
     BindSocket();
     
     InitListen();
-    AcceptClientConnection();
+    while(1)
+    {
+        AcceptClientConnection();
 
-    ReceiveMessage();
-    SendMessage();
+        ReceiveMessage();
+        SendMessage();
+        Disconnect();
+    }
 
-    Disconnect();
 
    return 0;
 }

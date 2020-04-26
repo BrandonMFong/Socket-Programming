@@ -27,8 +27,8 @@ void OpenSocket()
 void ConnectSocket()
 {
 	addr.sin_family = AF_INET;
-	addr.sin_port = htons(32351);
-	addr.sin_addr.s_addr = inet_network("153.90.192.3");
+	addr.sin_port = htons(5000);
+	addr.sin_addr.s_addr = inet_addr("130.191.166.3");
 	if(connect(sock, (struct sockaddr *)&addr, sizeof(struct sockaddr_in)) == -1)
 	{
 		perror("Error occured on connect");
