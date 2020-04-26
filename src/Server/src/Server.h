@@ -24,28 +24,53 @@ void OpenSocket()
 
 void BindSocket()
 {
-    if(bind(sock, (struct sockaddr *)&addr, sizeof(struct socketaddr_in)) == -1)
+    addr.sin_family = AF_INET;
+    addr.sin_port = htons(32351);
+    addr.sin_addr.s_addr = htonl(INADDR_ANY);
+    if(bind(sock, (struct sockaddr *)&addr, sizeof(struct sockaddr_in)) == -1)
     {
         perror("Error in bind");
         exit(-1);
     }
 }
 
-void ListenToSocket()
+void InitListen()
 {
-    while(1)
+    if(listen(sock, 1) == -1)
     {
-        if(listen(sock, 1) == -1)
-        {
-            perror("on listen");
-            exit(-1);
-        }
-
-        addrsize = sizeof(struct sockaddr_in);
-        clientsock = accept(sock, ) // TODO continue from here
+        perror("Error on listen");
+        exit(-1);
     }
 }
 
+void AcceptClientConnection()
+{
+    addrsize = sizeof(struct sockaddr_in);
+    clientsock = accept(sock, (struct sockaddr *)&addr, &addrsize); // TODO continue from here
+    if(clientsock == -1)
+    {
+        perror("Error on accept");
+        exit(-1);
+    }
+
+    printf("Connection made with client %s", inet_ntoa(addr.sin_addr));
+}
+
+void ReceiveMessage()
+{
+    recv(clientsock, buf, 80, 0);
+}
+
+void Disconnect()
+{
+    close(clientsock);
+    close(sock);
+}
+
+void SendMessage()
+{
+    send(clientsock, "Got Your Message", 17, 0);
+}
 
 void Dorev(char * string, int begin, int end) // recurse 
 {
