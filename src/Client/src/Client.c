@@ -9,16 +9,13 @@
 int main() 
 {
     Greetings();
-    int x = 0;
+    
     while (1)
     {
-        printf("Enter 1 to send: ");
-        scanf("%d", &x);
+        PutMessage();
         OpenSocket();
         ConnectSocket();
         SendMessage(); 
-        printf("Enter 1 to read server message back: ");
-        scanf("%d", &x);
         ReceiveMessage();
         Disconnect();
     }

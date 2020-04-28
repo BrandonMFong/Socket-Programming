@@ -8,9 +8,12 @@
 #include <unistd.h>
 #include <stdlib.h>
 
+#define MsgSize 100
+#define PortNum 5008
+
 int sock, clientsock, mlen, addrsize, msgct, chc, chct;
 struct sockaddr_in addr;
-char ch, buf[80];
+char ch, buf[MsgSize];
 
 void Dorev(char * string, int begin, int end) // recurse 
 {
@@ -41,7 +44,7 @@ void OpenSocket()
 void BindSocket()
 {
     addr.sin_family = AF_INET;
-    addr.sin_port = htons(5022);
+    addr.sin_port = htons(PortNum);
     addr.sin_addr.s_addr = htonl(INADDR_ANY);
     if(bind(sock, (struct sockaddr *)&addr, sizeof(struct sockaddr_in)) == -1)
     {
@@ -74,7 +77,7 @@ void AcceptClientConnection()
 
 void ReceiveMessage()
 {
-    recv(clientsock, buf, 80, 0);
+    recv(clientsock, buf, MsgSize, 0);
     printf("Client message: %s\n",buf ); 
 }
 
