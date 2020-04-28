@@ -12,6 +12,22 @@ int sock, clientsock, mlen, addrsize, msgct, chc, chct;
 struct sockaddr_in addr;
 char ch, buf[80];
 
+void Dorev(char * string, int begin, int end) // recurse 
+{
+    char temp;
+    if (begin >= end) return;
+
+    temp = string[begin];
+    string[begin] = string[end];
+    string[end] = temp;
+    Dorev(string, ++begin, --end);
+}
+
+void ReverseString(char * message)
+{
+    Dorev(message,0, strlen(message) - 1);
+}
+
 void OpenSocket()
 {
     sock = socket(AF_INET, SOCK_STREAM, 0);
@@ -25,7 +41,7 @@ void OpenSocket()
 void BindSocket()
 {
     addr.sin_family = AF_INET;
-    addr.sin_port = htons(5000);
+    addr.sin_port = htons(5022);
     addr.sin_addr.s_addr = htonl(INADDR_ANY);
     if(bind(sock, (struct sockaddr *)&addr, sizeof(struct sockaddr_in)) == -1)
     {
@@ -53,37 +69,25 @@ void AcceptClientConnection()
         exit(-1);
     }
 
-    printf("Connection made with client %s", inet_ntoa(addr.sin_addr));
+    printf("Connection made with client %s\n", inet_ntoa(addr.sin_addr));
 }
 
 void ReceiveMessage()
 {
     recv(clientsock, buf, 80, 0);
+    printf("Client message: %s\n",buf ); 
+}
+
+void SendMessage()
+{
+    ReverseString(buf);
+    send(clientsock, buf , 80, 0);
 }
 
 void Disconnect()
 {
     close(clientsock);
-    close(sock);
+    // close(sock);
 }
 
-void SendMessage()
-{
-    send(clientsock, "Got Your Message", 17, 0);
-}
 
-void Dorev(char * string, int begin, int end) // recurse 
-{
-    char temp;
-    if (begin >= end) return;
-
-    temp = string[begin];
-    string[begin] = string[end];
-    string[end] = temp;
-    Dorev(string, ++begin, --end);
-}
-
-void ReverseString(char * message)
-{
-    Dorev(message,0, strlen(message) - 1);
-}

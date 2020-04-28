@@ -20,7 +20,6 @@ int main()
     while(1)
     {
         AcceptClientConnection();
-
         ReceiveMessage();
         SendMessage();
         Disconnect();

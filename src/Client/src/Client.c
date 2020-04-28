@@ -9,26 +9,18 @@
 int main() 
 {
     Greetings();
-    char msg[100] = "";
-    char* ExitString = "!exit!";
-
-    OpenSocket();
-    ConnectSocket();
-
+    int x = 0;
     while (1)
     {
-        puts("[Enter message to send to server]");
-        fgets(msg, 100, stdin);
-
-        IsExit(msg); // checks exit string then
-
-        printf("\nYour Message: %s\n", msg);
-
-        // Do stuff to send to server
-        SendMessage(msg); // ERROR IS MESSAGE SIZE
+        printf("Enter 1 to send: ");
+        scanf("%d", &x);
+        OpenSocket();
+        ConnectSocket();
+        SendMessage(); 
+        printf("Enter 1 to read server message back: ");
+        scanf("%d", &x);
         ReceiveMessage();
-
-        ClearString(msg);
+        Disconnect();
     }
 
     return 0;

@@ -27,7 +27,7 @@ void OpenSocket()
 void ConnectSocket()
 {
 	addr.sin_family = AF_INET;
-	addr.sin_port = htons(5000);
+	addr.sin_port = htons(5022);
 	addr.sin_addr.s_addr = inet_addr("130.191.166.3");
 	if(connect(sock, (struct sockaddr *)&addr, sizeof(struct sockaddr_in)) == -1)
 	{
@@ -36,9 +36,10 @@ void ConnectSocket()
 	}
 }
 
-void SendMessage(char msg[100])
+void SendMessage()
 {
-	send(sock, msg, 100, 0);
+	send(sock, "Hello Server", 13, 0);
+    printf("Server message: %s\n",buf ); 
 }
 
 void ReceiveMessage()
@@ -46,7 +47,7 @@ void ReceiveMessage()
 	recv(sock, buf, 80, 0);
 }
 
-void CloseSocketConnection()
+void Disconnect()
 {
 	// Shutdown
 	if(shutdown(sock, 1) == -1)
@@ -73,7 +74,7 @@ void IsExit(char* string)
 	if (strstr(string, ExitString) != NULL)
 	{
 		printf("\nExiting program!\n"); 
-		CloseSocketConnection();
+		Disconnect();
 		exit(0);
 	}
 }
