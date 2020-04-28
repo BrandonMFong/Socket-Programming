@@ -7,15 +7,8 @@
 
 int main() 
 {
-    char msg[100] = "";
-
-    // ReverseString(msg);
-
-    // printf("%s", msg);
-
     OpenSocket();
     BindSocket();
-    
     InitListen();
     while(1)
     {
@@ -24,8 +17,6 @@ int main()
         SendMessage();
         Disconnect();
     }
-
-
    return 0;
 }
 

@@ -12,6 +12,7 @@ src/Client/Client.vcxproj.filters
 src/Client/Client.vcxproj.user
 src/Client/Debug/*
 src/Client/.vs/*
+config.h
 
 # server source 
 src/Server/Server.sln

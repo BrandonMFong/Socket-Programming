@@ -6,9 +6,8 @@
 #include <signal.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include "config.h"
 
-#define MsgSize 100
-#define PortNum 5008
 
 char* ExitString = "!exit!";
 int sock, addrsize;
@@ -64,7 +63,7 @@ void ConnectSocket()
 {
 	addr.sin_family = AF_INET;
 	addr.sin_port = htons(PortNum);
-	addr.sin_addr.s_addr = inet_addr("130.191.166.3");
+	addr.sin_addr.s_addr = inet_addr(JasonIPAddress);
 	if(connect(sock, (struct sockaddr *)&addr, sizeof(struct sockaddr_in)) == -1)
 	{
 		perror("Error occured on connect");

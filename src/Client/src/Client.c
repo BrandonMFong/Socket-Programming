@@ -9,7 +9,6 @@
 int main() 
 {
     Greetings();
-    
     while (1)
     {
         PutMessage();
@@ -19,6 +18,5 @@ int main()
         ReceiveMessage();
         Disconnect();
     }
-
     return 0;
 }

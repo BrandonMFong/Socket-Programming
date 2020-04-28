@@ -9,7 +9,7 @@
 #include <stdlib.h>
 
 #define MsgSize 100
-#define PortNum 5008
+#define PortNum 5005
 
 int sock, clientsock, mlen, addrsize, msgct, chc, chct;
 struct sockaddr_in addr;
