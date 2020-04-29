@@ -24,7 +24,9 @@ void Disconnect()
 		perror("Error on Shutdown");
 		exit(-1);
 	}
+	printf("\033[0;35m");
 	printf("Closed connection\n\n");
+	printf("\033[0m");
 	close(sock);
 }
 
@@ -42,8 +44,10 @@ void PutMessage()
 {
 	FILE *MessageFile = fopen(".\\Message.txt", "w"); // write only 
 	char msg[MsgSize];
-	printf("Enter Message: ");
-	fgets(msg, MsgSize, stdin);
+	printf("[Client Socket] Enter Message>_ ");
+	int n = 0; 
+	while ((msg[n++] = getchar()) != '\n'); // Reads user input
+	// fgets(msg, MsgSize, stdin);
 	IsExit(msg);
 	fwrite(msg , 1 , sizeof(msg) , MessageFile );
 	fclose(MessageFile);
@@ -88,7 +92,7 @@ void SendMessage()
 void ReceiveMessage()
 {
 	recv(sock, buf, 80, 0);
-    printf("\n\nServer message: %s\n\n",buf ); 
+    printf("\n\n[Client Socket] >_ Server message: %s\n\n",buf ); 
 }
 
 
@@ -99,5 +103,7 @@ void ClearString(char* string)
 
 void Greetings()
 {
+	printf("\033[0;32m");
 	printf("\n\nWelcome, enter '!exit!' to exit the program when prompted.\n\n");
+	printf("\033[0m");
 }
